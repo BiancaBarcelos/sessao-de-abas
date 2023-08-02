@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 6rem;
+    background-color: var(--bg-page);
+    /*overflow-y: hidden;*/
+    font-family: 'Inter', sans-serif;
+    color: var(--texto);
+}
+:root {
+    --btn: #FF0000; 
+    --texto: #C7C8CC;
+    --bg-page: #00050C;
+    --btn-hover: #8D1C19;
+    --bg-menu_aba: #121212;
+    --border-menu_aba: #2F2F2F;
+    --bg-conteudo_aba: #101011;
+}
+.sessao_x {
+    margin: auto;
+    width: 1200px;
+    background-color: var(--bg-conteudo_aba);
+}
+.menu {
+    background-color: var(--bg-menu_aba);
+    border-bottom: .2rem solid var(--border-menu_aba);
+}
+.menu_aba {
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+}
+.menu_aba li {
+    cursor: pointer;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .2rem solid transparent;
+}
+.menu_aba > li.ativa {
+    border-bottom: .2rem solid var(--btn);
+}
+.conteudo_aba {
+    width: 51rem;
+    margin: auto;
+    margin-top: 3rem;
+    height: 32rem;
+}
+.conteudo_aba > div:not(.ativa) {
+    display: none;
+}
+.aba_1 {
+    gap: 1rem;
+    display: flex;
+}
+#aba_1_txt {
+    display: flex;
+    color: var(--texto);
+    flex-direction: column;
+    justify-content: center;
+}
+.btn {
+    width: 15rem;
+    display: block;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 3px;
+    text-align: center;
+    color: var(--texto);
+    transition: all .4s;
+    text-decoration: none;
+    background-color: var(--btn);
+}
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+#aba_1_img img{
+    max-width: 23rem;
+}
+#aba_2_txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#aba_2_txt h2 {
+    width: 64%;
+    font-size: 22px;
+    margin: 0;
+}
+#aba_2_img {
+    display: flex;
+}
+#aba_2_img div {
+    width: 33.33%;
+    margin-top: 4rem;
+    align-items: center;
+}
+#aba_2_img div img {
+    height: 165px;
+}
+#aba_2_img div h3,
+p {
+    text-align: center;
+    margin-top: 2rem;
+}
+#aba_2_img div h3 {
+    height: 50px;
+}
+#aba_2_img div p {
+    font-size: 16px;
+}
+.aba_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aba_3 .btn {
+    margin: auto;
+}
