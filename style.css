@@ -126,3 +126,17 @@ p {
 .aba_3 .btn {
     margin: auto;
 }
+.sessao__texto2 {
+    gap: 5px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sessao__texto2 img{
+    width: 40px;
+    filter: grayscale(100%) brightness(300%);
+}
+.sessao__texto2 p {
+    margin: 0;
+}
